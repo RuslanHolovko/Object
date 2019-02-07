@@ -6,6 +6,8 @@ type: "angebot"
 
 contTitle: "HYBRID-NEARSHORING"
 employeName: "Andrew Bayer"
+employePosition: "Senior Software Engineer"
+employeImg: "employee.jpeg"
 ---
 
 

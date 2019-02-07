@@ -16,6 +16,8 @@
       font-weight: 200;
       font-size: 26px; }
 
+.flip-container.hidden{display: none !important;}
+
 #cards .content {
   background-color: #f6f6f6;
   padding: 130px 0;

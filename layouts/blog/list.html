@@ -1,0 +1,90 @@
+{{ define "main" }}
+
+    <div id="cards" class="container-main">
+
+         <!-- *** SUBNAV ***  -->
+
+        <nav class="subnav">
+                <div class="container">
+                    <ul class="subnav__menu">
+                        <li class="subnav__menu__item subnav__menu__item--active"><a href="#year17">2017</a></li>
+                        <li class="subnav__menu__item"><a href="#year18">2018</a></li>
+                        <li class="subnav__menu__item subnav__menu__item--divider"></li>
+                        <li class="filter">
+                            <span>Aktiver Filter: </span>
+                            <div class="tag tag-active">event</div>
+                            <div class="remove"></div>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </nav>
+
+ <!-- *** END SUBNAV ***  -->
+            
+        <!-- END SUBNAV -->
+
+        <div class="content">
+
+            <div class="container content-container">
+
+                <section class="main-content">
+                    <h2 class="content-title">Beiträge</h2>
+
+                    <div id="year17" class="card-cat">
+                        <h3>2017</h3>
+
+                        <div class="cards">
+
+                            {{ range where .Site.Pages "Section" "blog" }}
+
+                            <!-- CARD -->
+                            <div class="flip-container {{ .Params.specialClass }}">
+                                    <div class="flipper">
+
+                                        <div class="front">
+
+                                            <div class="card-pic">
+                                                <a class="card-link" href="{{ .URL }}">
+                                                    <img src={{"img/card.jpg" | relURL}} alt="Card">
+                                                </a>
+                                            </div>
+
+                                            <div class="card-info">
+                                                <a class="card-link" href="{{ .URL }}">
+                                                    <h3 class="card-title">{{ .Params.cardTitle }}</h3>
+                                                </a>
+                                                <div class="separator"></div>
+                                                <p class="card-description">{{ .Title }}</p>
+                                                
+                                            </div>
+                                       
+                                            <button class="card-flip">Tags anzeigen</button>
+                                        </div>
+
+                                        <div class="back">
+                                            <a href="" class="tag">black duck</a>
+                                            <a href="" class="tag">black duck</a>
+                                            <a href="" class="tag tag-active">black duck</a>
+                                            <a href="" class="tag">black duck</a>
+                                            <a href="" class="tag">black duck</a>
+                                            <button class="flip-back">Tags anzeigen</button>
+                                        </div>
+                                        
+
+                                    </div>
+                            </div>
+                            <!-- END CARD -->
+                                
+                            {{ end }}
+
+
+                            </div>
+    
+                        </div>
+
+                </section>
+            </div>
+        </div>
+
+{{ end }}

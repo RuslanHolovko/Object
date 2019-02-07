@@ -6,6 +6,7 @@ type: "angebot"
 
 contTitle: "Consulting"
 employeName: "Mark Twain"
+employePosition: "Founder (CEO & Verwaltungsratspräsident)"
 
 
 ---

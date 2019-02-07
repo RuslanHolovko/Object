@@ -21,7 +21,11 @@
             <div class="container content-container">
 
                 <section class="main-content">
-                    <h2 class="content-title">CONSULTING</h2>
+                    <h2 class="content-title">{{ .Params.contTitle }}</h2>
+
+                    {{ range where .Site.Pages "Section" "angebot" }}
+                        <h1>{{ .Title }}</h1>
+                    {{ end }}
 
                     <hr class="separator">
 

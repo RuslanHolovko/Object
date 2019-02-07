@@ -8,7 +8,7 @@
                     <a href="/" class="logo"><img src="{{"img/logo_retina.png" | relURL}}" alt="Object"></a>
                     
                     <ul class="main-nav">
-                        <li class="main-nav__item"><a href="#">Angebot</a>
+                        <li class="main-nav__item"><a href="/angebot">Angebot</a>
                             <ul class="nav__sub-menu">
 
                                 {{ range where .Site.Pages "Section" "angebot"}}
@@ -18,8 +18,8 @@
                             </ul>
 
                         </li>
-                        <li class="main-nav__item"><a href="#">Lösungen</a></li>
-                        <li class="main-nav__item"><a href="#">Technologien</a>
+                        <li class="main-nav__item"><a href="{{ .URL }}">Lösungen</a></li>
+                        <li class="main-nav__item"><a href="/technologien">Technologien</a>
                             <ul class="nav__sub-menu">
 <!--                                 <li class="nav__sub-menu__item"><a href="#">Alfresco</a></li>
                                 <li class="nav__sub-menu__item"><a href="#">Ephesoft</a></li>
@@ -32,8 +32,14 @@
                                 {{ end }}
                             </ul>
                         </li>
-                        <li class="main-nav__item"><a href="#">Blog</a></li>
-                        <li class="main-nav__item"><a href="#">Kontakt</a></li>
+                        <li class="main-nav__item"><a href="/blog">Blog</a>
+                            <ul class="nav__sub-menu">
+                                {{ range where .Site.Pages "Section" "blog"}}
+                                     <li class="nav__sub-menu__item"><a href="{{ .URL }}">{{ .Title }}</a></li>
+                                {{ end }}
+                            </ul>
+                        </li>
+                        <li class="main-nav__item"><a href="{{ .URL }}">Kontakt</a></li>
                     </ul>
                 </div>
     
@@ -139,6 +145,6 @@
             <!-- END NAVBAR -->
 
             <div class="container">
-                <h2 class="header__text">Hybrid-Nearshoring</h2>
+                <h2 class="header__text">{{ .Params.contTitle }}</h2>
             </div>
         </header>

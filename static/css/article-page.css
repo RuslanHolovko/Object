@@ -93,6 +93,9 @@
 #article-page .main-content{
     width:66.666666%
 }
+#article-page #cards .main-content{
+    width:100%
+}
 #article-page .content-container{
     display:-webkit-box;
     display:-ms-flexbox;
