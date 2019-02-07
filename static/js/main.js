@@ -9,7 +9,7 @@ $(document).ready(function(){
 		}, 1000);
 	};
 
-	window.addEventListener('DOMContentLoaded', loading());
+	window.addEventListener('load', loading());
 
 	// init slick slider
 	$('.slider-js').slick({
