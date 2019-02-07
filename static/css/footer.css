@@ -1,0 +1,192 @@
+.page-footer{
+    background-color:#101f2d;
+    padding:33px 95px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+    -webkit-box-pack:justify;
+    -ms-flex-pack:justify;
+    justify-content:space-between;
+    -ms-flex-line-pack:center;
+    align-content:center
+}
+.follow-us{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+    -ms-flex-flow:row wrap;
+    flex-flow:row wrap;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center
+}
+.follow-us__text{
+    margin-right:15px;
+    color:#626d71
+}
+.follow-us__btns--wrapper{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+    -ms-flex-flow:row nowrap;
+    flex-flow:row nowrap;
+    -webkit-box-pack:justify;
+    -ms-flex-pack:justify;
+    justify-content:space-between;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center
+}
+.follow-us__btn{
+    text-decoration:none
+}
+.follow-us__btn .icon{
+    color:#626d71;
+    font-size:36px
+}
+.follow-us__btn:focus .icon,.follow-us__btn:hover .icon{
+    color:#94d60a
+}
+.follow-us__btn:not(:last-child){
+    margin-right:15px
+}
+.subscription{
+    -ms-flex-item-align:center;
+    align-self:center;
+    display:inline-block;
+    background:#94d60a;
+    font-size:14px;
+    line-height:1.3;
+    color:#fff;
+    border:none;
+    outline:0;
+    text-decoration:none;
+    padding:6px 6px;
+    text-transform:uppercase;
+    border-radius:3px
+}
+.subscription:hover{
+    cursor:pointer;
+    color:#72a508;
+    background-color:#aff51e
+}
+.footer-nav{
+    padding:0;
+    margin:0;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+    -ms-flex-flow:row nowrap;
+    flex-flow:row nowrap
+}
+.footer-nav .footer-nav__item:not(:last-child){
+    margin-right:15px
+}
+.footer-nav .footer-nav__item a{
+    text-decoration:none;
+    color:#626d71
+}
+.footer-nav .footer-nav__item a:focus,.footer-nav .footer-nav__item a:hover{
+    color:#94d60a
+}
+.footer-menu{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+    -ms-flex-flow:row wrap;
+    flex-flow:row wrap;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center
+}
+.footer-link{
+    display:inline-block;
+    background-image:url(../img/swiss_made.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    width:22px;
+    height:18px
+}
+.footer-link:hover{
+    background-image:url(../img/swiss_made_active.png)
+}
+.copyright{
+    color:#626d71;
+    margin-right:15px
+}
+.site-info{
+    margin-left:15px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+    -ms-flex-flow:row nowrap;
+    flex-flow:row nowrap;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center
+}
+@media (max-width:1199px){
+    .follow-us__text{
+        margin-bottom:10px
+    }
+    .follow-us__btns--wrapper{
+        margin-bottom:10px
+    }
+    .page-footer{
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+        flex-direction:column
+    }
+    .follow-us{
+        margin-bottom:10px
+    }
+    .subscription{
+        margin-bottom:20px
+    }
+}
+@media (max-width:767px){
+    .page-footer{
+        padding:33px 15px
+    }
+}
+@media (max-width:479px){
+    .follow-us{
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+        flex-direction:column
+    }
+    .follow-us__text{
+        margin-right:0
+    }
+    .footer-menu{
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+        flex-direction:column
+    }
+    .site-info{
+        margin-left:0;
+        margin-top:10px
+    }
+}

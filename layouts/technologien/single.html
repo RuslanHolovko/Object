@@ -1,0 +1,248 @@
+{{ define "main" }}
+
+    <div>
+        <!-- SUBNAV -->
+
+        <nav class="subnav">
+            <div class="container">
+                <ul class="subnav__menu">
+                    <li class="subnav__menu__item subnav__menu__item--active"><a href="#top">Inhalt</a></li>
+                    <li class="subnav__menu__item"><a href="#recommended">Empfohlene Artikel</a></li>
+                    <li class="subnav__menu__item subnav__menu__item--divider"></li>
+                    <li class="subnav__menu__item share-btn"><a href="#"><div class="share-icon"></div>Artikel teilen</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- END SUBNAV -->
+
+        <div class="content">
+
+            <div class="container content-container">
+
+                <section class="main-content">
+                    <h2 class="content-title">CONSULTING</h2>
+
+                    <hr class="separator">
+
+                    <p class="intro-text">Wie wird heutzutage das Wissen in der Unternehmung mit den Beratern und Vertriebsteams geteilt? Welche Experten können in einem neuen Projekt mitwirken und wie erfolgt die «Wissensübergabe»?</p>
+                    
+                    <div class="article-img">
+                        <img src={{"img/page-content/obj_consulting.jpg" | absURL}} alt="Consulting">
+                    </div>
+
+                    <p>
+                        Die wichtigste Ressource in der Beratung sind die Mitarbeiter und ihr Wissen. Das Wissen des Mitarbeiters kann durch keine Maschine oder Anlage ersetzt werden. Solange der Mitarbeiter in der Unternehmung bleibt, ist auch das Wissen vorhanden. Damit das Wissen nicht verloren geht, ist ein wiederkehrender Wissensaustausch in der Unternehmung zwingend notwendig.
+                    </p>
+                    <br>
+                    <p>
+                        Das Wissen des einzelnen Mitarbeiters muss immer auf dem aktuellsten Stand sein, damit er sich den wechselnden Herausforderungen stellen kann. Nur so wird man sich im immer härter werdenden Beratungsumfeld behaupten können.
+                    </p>
+                    <br>
+                    <p>
+                        Die meisten Kunden sind international positioniert und verfügen über eine Länderorganisation, was den Wissensaustausch innerhalb der Unternehmung erschwert. Dieser Fakt erfordert eine effiziente Anbindung an die Konzernzentrale, weil dort der aktuelle Wissensaustausch regelmässig stattfindet. Die Zentrale ist dafür verantwortlich, dass die Länderorganisationen mit dem aktuellen Wissen versorgt werden.
+                    </p>
+                    <br>
+                    <p>
+                        Unternehmungen beschreiten heute bereits den mobilen digitalen Weg über Tablets und Smartphones, um ihre Mitarbeiter auf der ganzen Welt mit den neusten Zahlen und Fakten zu Projekten schnell und unkompliziert auf den aktuellen Stand zu bringen.
+                    </p>
+                    <br>
+                    <br>
+                    <p>
+                        OBJECT ist Experte in der Digitalisierung für den deutschsprachigen Raum und realisiert anspruchsvolle IT-Lösungen in den Bereichen ECM, Capturing, DMS, Collaboration, Workflows (BPM), Portale, Open Source Security und Archivierung.
+                    </p>
+
+                    <p>
+                        Nach individuellen Anforderungen und für unterschiedlichste Umgebungen integriert, betreut und erweitert OBJECT massgeschneiderte Systeme auf Basis von modernsten Open Source Technologien und agilen Entwicklungsmethoden.
+                    </p>
+
+                    <p>
+                        Gemeinsam mit Partnern wie Alfresco, Ephesoft, DocuSign und Black Duck hilft OBJECT Organisationen aller Branchen mit ihren Daten und Informationen optimal umzugehen.
+                    </p>
+
+                    <p>
+                        Mit einer ganzheitlichen Vorgehensweise unterstützt OBJECT auf strategischer, technologischer und persönlicher Ebene und schafft somit Mehrwerte, welche nachhaltig zum Unternehmenserfolg beitragen.
+                    </p>
+                    <hr class="separator full-width bottom-space">
+
+                </section>
+                
+                <aside class="contact">
+                    <div class="employee">
+
+                        <h2 class="employee-title">IHR ANSPRECHSPARTNER</h2>
+
+                        <img src={{"img/page-content/phillip_dabel.jpg" | absURL}} alt="Employee pic">
+
+                        <div class="employee-name">Phillip Dabel</div>
+
+                        <div class="employee-position">Consultant</div>
+
+                        <div class="employee-links">
+                            <a href="#" data-modal="true" data-modal-type="recall" class="call"><i class="icon icon-call"></i>Ich wünsche einen Rückruf</a>
+                            <a href="#" data-modal="true" data-modal-type="email" class="mail"><i class="icon icon-mail"></i>Schreiben Sie mir eine Mail</a>
+                            <a href="#recommended" class="articles scroll-page"><i class="icon icon-down"></i>Empfohlene Artikel ansehen</a>
+                        </div>
+
+                    </div>
+                </aside>
+
+
+                
+
+
+
+            </div>
+        </div>
+
+        <section id="recommended" class="recommended">
+            <div class="container">
+
+                <h2 class="recommended-title">EMPFOHLENE ARTIKEL ZU DIESEM THEMA:</h2>
+
+                <section class="recommended-cat">
+
+                    <h3 class="cat-title">LÖSUNGEN</h3>
+
+                    <div class="article-wrapper">
+                        <a href="#" class="article-link">
+                            <article class="recommended-article">
+
+                                <h3 class="article-title">Smart Knowledge Management</h3>
+                                
+                                <p class="article-text">Wettbewerbsvorteile</p>
+                        
+                            </article>
+                        </a>
+                    </div>
+                    
+                    
+                </section> 
+
+                
+            </div>
+        </section>
+
+         <!-- POPUPS -->
+        
+         <div class="modal-wrapper">
+            <div class="modal share">
+                <header class="modal-header">
+                   <h3>Artikel teilen</h3>
+                   <button class="modal-close">
+                       <span></span>
+                       <span></span>
+                   </button>
+                </header>
+                <div class="modal-content tabs">
+
+                    <div class="tabs-btns">
+                        <button class="via via-social via-active">via social</button>
+                        <button class="via via-email">via email</button>
+                    </div>
+
+                    <div class="social-box">
+                        <ul class="socials">
+                            <li class="socials-item"><a href="#"><i class="icon icon-google"></i></a></li>
+                            <li class="socials-item"><a href="#"><i class="icon icon-linkedin"></i></a></li>
+                            <li class="socials-item"><a href="#"><i class="icon icon-xing"></i></a></li>
+                            <li class="socials-item"><a href="#"><i class="icon icon-twitter"></i></a></li>
+                            <li class="socials-item"><a href="#"><i class="icon icon-facebook"></i></a></li>
+                        </ul>
+                    </div>
+
+                   <div class="email-box">
+                       <form class="email-form" action="#">
+                           <fieldset>
+                                <label for="via-email">Email</label>
+                                <input id="via-email" type="text" name="via-email">
+                           </fieldset>
+
+                           <fieldset>
+                                <label for="email-comment">Comment</label>
+                                    <textarea id="email-comment" name="email-comment" rows="4">  
+                                </textarea>
+                           </fieldset>
+                           
+                       </form>
+                       
+                        <button class="btn-green send-email" type="submit">senden</button>
+
+
+                   </div>
+
+
+                </div>
+            </div>
+         </div>
+
+    </div>
+
+
+    <div id="modal-overlay">
+        <div id="modal-box">
+            <div id="modal-header">
+                <h2 class="modal-box__title">ICH WÜNSCHE EINEN RÜCKRUF</h2>
+                <button class="cls-modal">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div id="modal-content">
+
+                <form action="#" id="modal-form" method="POST">
+
+                    <div class="form-left">
+                        <label class="modal-form__name">
+                            <span class="modal-label">Ihr Name*</span>
+                            <input type="text" name="name" placeholder="" required>
+                        </label>
+                        <label class="modal-form__lastname">
+                            <span class="modal-label">Ihr Vorname*</span>
+                            <input type="text" name="lastname" placeholder="" required>
+                        </label>
+                        <label class="modal-form__company">
+                            <span class="modal-label">Firma*</span>
+                            <input type="text" name="company" placeholder="" required>
+                        </label>
+                        <label class="modal-form__email">
+                            <span class="modal-label">E-Mail</span>
+                            <input type="email" name="email" placeholder="">
+                        </label>
+                        <label class="modal-form__phone">
+                            <span class="modal-label">Telefonnummer*</span>
+                            <input type="tel" name="phone" placeholder="" required>
+                        </label>
+                    </div>
+
+                    <div class="form-right">
+                        <label class="modal-form__message">
+                            <span class="modal-label">Um was geht es?*</span>
+                            <textarea name="message"></textarea>
+                        </label>
+                        <label class="modal-form__captcha">
+                            <div class="form-group">
+                                <span class="modal-label">Bitte tragen Sie ein Captcha ein*</span>
+                                <input type="text" name="modal-captcha" required>
+                            </div>
+                            <span id="modal-captcha">0000</span>
+                        </label>
+                        <p class="modal-form__text">
+                                Hinweis: Bitte beachten Sie, dass Ihre Daten zum Zweck der Kontaktaufnahme gespeichert werden. Ihre Daten werden vertraulich behandelt und nicht an Dritte weitergegeben.
+                        </p>
+                        <label class="modal-form__form-agree">
+                            <input type="checkbox" name="modal-agree" required>
+                            <span class="modal-label">Ich möchte zukünftig den Newsletter erhalten</span>
+                        </label>
+                    </div>
+
+                    <div class="form-bottom">
+                        <button class="green-btn" type="submit">senden</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+{{ end }}

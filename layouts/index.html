@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<title>index page</title>
+
+	<link rel="stylesheet" href="css/main.min.css" type="text/css">
+
+</head>
+<body>
+	
+	<!-- .preloader begin -->
+	<div class="preloader">
+
+			<!-- MUTLI SPINNER -->
+			<div class="multi-spinner-container">
+				<div class="multi-spinner">
+					<div class="multi-spinner">
+						<div class="multi-spinner">
+							<div class="multi-spinner">
+								<div class="multi-spinner">
+									<div class="multi-spinner">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- .preloader end -->
+
+	
+	<div class="container">
+
+	{{ partial "home-header" . }}
+
+ <h1 style="z-index: 10000">{{ .Params.homeTitle }}</h1>
+
+	<div class="overlay"></div>
+
+	<div class="search">
+
+		<form role="search">
+			<div class="search-control">
+					<input type="search" id="site-search" name="q"
+								 aria-label="Search through site content">
+					<button class="search__search">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+						<path fill="#fff" d="M51.6,96.7c11,0,21-3.9,28.8-10.5l35,35c0.8,0.8,1.8,1.2,2.9,1.2s2.1-0.4,2.9-1.2c1.6-1.6,1.6-4.2,0-5.8l-35-35   c6.5-7.8,10.5-17.9,10.5-28.8c0-24.9-20.2-45.1-45.1-45.1C26.8,6.5,6.5,26.8,6.5,51.6C6.5,76.5,26.8,96.7,51.6,96.7z M51.6,14.7   c20.4,0,36.9,16.6,36.9,36.9C88.5,72,72,88.5,51.6,88.5c-20.4,0-36.9-16.6-36.9-36.9C14.7,31.3,31.3,14.7,51.6,14.7z"/>
+						</svg>
+				</button>
+			</div>
+		</form>
+
+		<button class="search__close"><span></span><span></span></button>
+
+	</div>
+
+	<!-- .mobile-menu begin -->
+	<div class="mobile">
+
+		<div class="mobile__top">
+
+			<div>
+				<img src="img/logo_positiv_mobile_retina.png" alt="object">
+			</div>
+
+			<button class="mobile__button">
+				<span></span>
+				<span></span>
+			</button>
+
+		</div>
+
+		<ul class="mobile__list">
+			<li><a href="javascript:void(0)">Angebot</a></li>
+			<li><a href="javascript:void(0)">Lösungen</a></li>
+			<li><a href="javascript:void(0)">Blog</a></li>
+			<li><a href="javascript:void(0)">Kontakt</a></li>
+		</ul>
+
+
+
+		<ul class="mobile__sublist">
+			<li><a href="javascript:void(0)">Unternehmen</a></li>
+			<li><a href="javascript:void(0)">Über Uns</a></li>
+			<li><a href="javascript:void(0)">Team</a></li>
+			<li><a href="javascript:void(0)">Kunden & Partner</a></li>
+			<li><a href="javascript:void(0)">Veranstaltungen</a></li>
+			<li><a href="javascript:void(0)">Offene Stellen</a></li>
+			<li><a href="javascript:void(0)">Kontakt</a></li>
+			<li><a href="javascript:void(0)">Mediathek</a></li>
+		</ul>
+
+	</div>
+	<!-- .mobile-menu end -->
+	
+	{{ partial "home-slider" . }}
+
+	<!-- .info begin -->
+	<div class="info">
+
+		<!-- .info__column begin -->
+		<div class="info__column">
+
+			<div class="info__topText">case study</div>
+
+			<h3 class="info__title">Success Story <br> sbs</h3>
+
+			<div class="info__text">Alfresco im Einsatz bei der SBS: Die SBS wurde 1903 von Dr. h.c. Theodor Staub unter dem Namen “Schweizerische Blinden-Leihbibliothek” gegründet. OBJECT ist stolz am Beispiel SBS aufzuzeigen, dass der Kunde bei OBJECT im Zentrum steht.</div>
+
+			<a href="javascript:void(0)" class="green-link">Zur story</a>
+
+		</div>
+		<!-- .info__column end -->
+
+
+		<!-- .info__column begin -->
+		<div class="info__column">
+
+			<div class="info__topText">webinar</div>
+
+			<h3 class="info__title">VON DROPBOX UND OWNCLOUD ZU ALFRESCO</h3>
+
+			<div class="info__text">Im Rahmen dieses Webinars, soll anhand von Alfresco vorgestellt werden, wie eine standortübergreifende Lösung schnell und effizient eingeführt und eingesetzt werden kann. Auch wird gezeigt, wie schnell Daten aus einem bestehenden OwnCloud-Archiv ganz oder partiell übertragen und somit die Datenhoheit zurückgewonnen werden kann.</div>
+
+			<a href="javascript:void(0)" class="green-link">Webinar anschauen</a>
+
+		</div>
+		<!-- .info__column end -->
+
+	</div>
+	<!-- .info end -->
+
+	{{ partial "home-reviews" . }}
+  
+  {{ partial "home-footer" .}}
+	 
+</body>
+</html>

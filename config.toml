@@ -1,0 +1,16 @@
+baseURL = ""
+languageCode = "en-us"
+title = "My New Hugo Site"
+
+staticDir = ["static"]
+
+[params]
+	xing = "https://www.xing.com/companies/object"
+	facebook = "https://www.facebook.com/Object-520790891373493"
+	google = "https://plus.google.com"
+	twitter = "https://twitter.com/OBJECT_ECM"
+	linkedin = "https://www.linkedin.com/company/object-ecm-ag?trk=company_logo"
+	vimeo = "https://vimeo.com/channels/objectmedia"
+
+
+

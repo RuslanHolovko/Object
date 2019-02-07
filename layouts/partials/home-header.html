@@ -1,0 +1,97 @@
+	<!--.header begin -->
+<header class="header">
+
+	<!-- .header__logo begin -->
+	<div class="header__logo">
+
+		<a href="/" class="logo">
+			<img src="img/logo_retina.png" alt="logo">
+		</a>
+
+	</div>
+	<!-- .header__logo end -->
+
+	<!-- navigation begin -->
+	<nav class="nav">
+
+		<!-- .nav__icon begin -->
+		<button class="nav__icon">
+
+			<span class="nav__line"></span>
+			<span class="nav__line"></span>
+			<span class="nav__line"></span>
+
+		</button>
+		<!-- .nav__icon end -->
+
+		<!-- .nav__logo begin -->
+		<div class="nav__logo">
+			<a href="/"><img src="img/OBJ_Landing_Logo.png" alt="logo"></a>
+		</div>
+		<!-- .nav__logo end -->
+
+		<!-- nav__left begin -->
+		<ul class="nav__left">
+			<li class="nav__link">
+				<a href="javascript:void(0)">Angebot</a>
+				<ul class="nav__sublist">
+<!-- 					<li><a href="javascript:void(0)">Digitalisierung</a></li>
+					<li><a href="javascript:void(0)">Hybrid-Nearshoring</a></li>
+					<li><a href="javascript:void(0)">Wartung & Support</a></li>
+					<li><a href="javascript:void(0)">Identity Managment</a></li> -->
+
+
+					{{ range where .Site.Pages "Section" "angebot"}}
+						<li><a href="{{ .URL }}">{{ .Title }}</a></li>
+					{{ end }}
+
+				</ul>
+			</li>
+			<li>
+				<a href="javascript:void(0)">Lösungen</a></li>
+			<li class="nav__link"><a href="javascript:void(0)">Technologien</a>
+				<ul class="nav__sublist">
+<!-- 					<li><a href="javascript:void(0)">Alfresco</a></li>
+					<li><a href="javascript:void(0)">Ephesoft</a></li>
+					<li><a href="javascript:void(0)">Dogusign</a></li>
+					<li><a href="javascript:void(0)">Liferay</a></li>
+					<li><a href="javascript:void(0)">Java</a></li>
+					<li><a href="javascript:void(0)">C#</a></li> -->
+					{{ range where .Site.Pages "Section" "technologien"}}
+						<li><a href="{{ .URL }}">{{ .Title }}</a></li>
+					{{ end }}
+				</ul>
+			</li>
+			<li><a href="javascript:void(0)">blog</a></li>
+			<li><a href="javascript:void(0)">kontakt</a></li>
+		</ul>
+		<!-- nav__left end -->
+
+		<!-- nav__right begin -->
+		<ul class="nav__right">
+			<li><a href="javascript:void(0)">mediathek</a></li>
+			<li class="nav__link">
+				<a href="javascript:void(0)">Unternehmen</a>
+				<ul class="nav__sublist">
+					<li><a href="javascript:void(0)">Über Uns</a></li>
+					<li><a href="javascript:void(0)">Team</a></li>
+					<li><a href="javascript:void(0)">Kunden & Partner</a></li>
+					<li><a href="javascript:void(0)">Veranstaltungen</a></li>
+					<li><a href="javascript:void(0)">Offene Stellen</a></li>
+					<li><a href="javascript:void(0)">Kontakt</a></li>
+				</ul>
+			</li>
+			<li><a href="javascript:void(0)">Suche</a></li>
+		</ul>
+		<!-- nav__right end -->
+
+		<button class="nav__search">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+			<path fill="#fff" d="M51.6,96.7c11,0,21-3.9,28.8-10.5l35,35c0.8,0.8,1.8,1.2,2.9,1.2s2.1-0.4,2.9-1.2c1.6-1.6,1.6-4.2,0-5.8l-35-35   c6.5-7.8,10.5-17.9,10.5-28.8c0-24.9-20.2-45.1-45.1-45.1C26.8,6.5,6.5,26.8,6.5,51.6C6.5,76.5,26.8,96.7,51.6,96.7z M51.6,14.7   c20.4,0,36.9,16.6,36.9,36.9C88.5,72,72,88.5,51.6,88.5c-20.4,0-36.9-16.6-36.9-36.9C14.7,31.3,31.3,14.7,51.6,14.7z"/>
+			</svg>
+		</button>
+
+	</nav>
+	<!-- navigation end -->
+</header>
+<!-- .header end -->
