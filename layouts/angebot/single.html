@@ -1,21 +1,5 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hybrid-Nearshoring</title>
-    <link rel="stylesheet" href="{{"css/normalize.css" | absURL}}">
-    <link rel="stylesheet" href="{{"css/style.css" | absURL}}">
-    <link rel="stylesheet" href="{{"css/header.css" | absURL}}">
-    <link rel="stylesheet" href="{{"css/footer.css" | absURL}}">
-    <link rel="stylesheet" href="{{"css/article-page.css" | absURL}}">
-</head>
-<body>
-    <div id="article-page" class="container-main">
-
-    {{ partial "second-header" . }}
-
+{{ define "main" }}
+<div>
         <!-- SUBNAV -->
 
         <nav class="subnav">
@@ -161,7 +145,7 @@
 
                         <h2 class="employee-title">Ihr Ansprechspartner</h2>
 
-                        <img src="{{"img/employee.jpeg"| absURL}}" alt="Employee pic">
+                        <img src="{{"img/employee.jpeg"| relURL}}" alt="Employee pic">
 
                         <div class="employee-name">{{ .Params.employeName }}</div>
 
@@ -359,7 +343,6 @@
             </div>
         </section>
 
-        {{ partial "second-footer" . }}
 
          <!-- POPUPS -->
         
@@ -482,8 +465,4 @@
             </div>
         </div>
 
-    <script src="{{"js/jquery-3.3.1.min.js" | absURL}}"></script>
-    <script src="{{"js/script.js" | absURL}}"></script>
-    
-</body>
-</html>
+        {{ end }}
