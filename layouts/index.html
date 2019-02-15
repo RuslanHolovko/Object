@@ -59,44 +59,7 @@
 
 	</div>
 
-	<!-- .mobile-menu begin -->
-	<div class="mobile">
-
-		<div class="mobile__top">
-
-			<div>
-				<img src="img/logo_positiv_mobile_retina.png" alt="object">
-			</div>
-
-			<button class="mobile__button">
-				<span></span>
-				<span></span>
-			</button>
-
-		</div>
-
-		<ul class="mobile__list">
-			<li><a href="javascript:void(0)">Angebot</a></li>
-			<li><a href="javascript:void(0)">Lösungen</a></li>
-			<li><a href="javascript:void(0)">Blog</a></li>
-			<li><a href="javascript:void(0)">Kontakt</a></li>
-		</ul>
-
-
-
-		<ul class="mobile__sublist">
-			<li><a href="javascript:void(0)">Unternehmen</a></li>
-			<li><a href="javascript:void(0)">Über Uns</a></li>
-			<li><a href="javascript:void(0)">Team</a></li>
-			<li><a href="javascript:void(0)">Kunden & Partner</a></li>
-			<li><a href="javascript:void(0)">Veranstaltungen</a></li>
-			<li><a href="javascript:void(0)">Offene Stellen</a></li>
-			<li><a href="javascript:void(0)">Kontakt</a></li>
-			<li><a href="javascript:void(0)">Mediathek</a></li>
-		</ul>
-
-	</div>
-	<!-- .mobile-menu end -->
+ 	{{ partial "mobile-menu" . }}
 	
 	{{ partial "home-slider" . }}
 

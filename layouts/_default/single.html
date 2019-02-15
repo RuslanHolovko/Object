@@ -1,21 +1,7 @@
 {{ define "main" }}
-<div>
-        <!-- SUBNAV -->
 
-        <nav class="subnav">
-            <div class="container">
-                <ul class="subnav__menu">
-                    <li class="subnav__menu__item subnav__menu__item--active"><a href="#top">Inhalt</a></li>
-                    <li class="subnav__menu__item"><a href="#recommended">Empfohlene Artikel</a></li>
-                    <li class="subnav__menu__item subnav__menu__item--divider"></li>
-                    <li class="subnav__menu__item"><a class="green-btn" data-modal="true" data-modal-type="download" href="#">DOWNLOAD FACTSHEET DEUTSCH</a>
-                    <li class="subnav__menu__item share-btn"><a href="#"><div class="share-icon"></div>Artikel teilen</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <!-- END SUBNAV -->
-
+    <div>
+        {{ partial "subnav" }}
         <div class="content">
 
             <div class="container content-container">
@@ -25,324 +11,145 @@
 
                     <hr class="separator">
 
-                    <p class="intro-text">Was spricht für Hybrid-Nearshoring und wo liegen die Vorteile? Wieso Outsourcen (Offshore)?</p>
-
-                    <p>Das Projektgeschäft wird immer anspruchsvoller. So verlangt der Markt nach immer schnelleren und qualitativ hochstehenden Lösungen. Natürlich möchte man sämtliche Kundenbedürfnisse erfüllen, jedoch ohne dabei die Risikofaktoren zu vernachlässigen. Das Outsourcing-Modell bietet Ihnen erhebliche Vorteile ein Projekt respektive ein Teilprojekt innert kürzester Zeit mit minimalen finanziellen Aufwänden sowie reduzierten Risikofaktoren umzusetzen.</p>
-        
-                    <blockquote>
-                        Rohrpost, Lochkarten, Nadeldrucker, Telefax, 56k-Modems und Disketten sind noch nicht so alt, auch wenn sie heute so wirken.
-                    </blockquote>
+                    <p class="intro-text">Wie wird heutzutage das Wissen in der Unternehmung mit den Beratern und Vertriebsteams geteilt? Welche Experten können in einem neuen Projekt mitwirken und wie erfolgt die «Wissensübergabe»?</p>
+                    
+                    <div class="article-img">
+                        <img src={{"img/page-content/obj_consulting.jpg" | relURL}} alt="Consulting">
+                    </div>
 
                     <p>
-
-                        Als Individuum mit dieser rasanten Entwicklung Schritt halten zu können ist sehr anspruchsvoll. Hinzu kommen grosse Diskrepanzen in den verschiedenen Generationen in Bezug auf Verständnis und Umgang mit Technik und Kommunikation. <br>
-                        
-                        Viele Menschen sind überfordert und wissen nicht recht, wie sie die neuen „Werkzeuge“ nutzen sollen. Einige resignieren und wenden sich komplett ab – vorwiegend Senioren. Andere verlieren sich in den Möglichkeiten und der ständigen Vernetztheit und scheinen sich das Leben vom ständigen Begleiter Smartphone diktieren zu lassen. Viele – vorwiegend junge Leute – identifizieren und bewegen sich digital und wissen gar nicht was sie verpassen: Nämliche einen wesentlichen, nicht zu unterschätzenden Teil des „realen“ Lebens.
+                        Die wichtigste Ressource in der Beratung sind die Mitarbeiter und ihr Wissen. Das Wissen des Mitarbeiters kann durch keine Maschine oder Anlage ersetzt werden. Solange der Mitarbeiter in der Unternehmung bleibt, ist auch das Wissen vorhanden. Damit das Wissen nicht verloren geht, ist ein wiederkehrender Wissensaustausch in der Unternehmung zwingend notwendig.
+                    </p>
+                    <br>
+                    <p>
+                        Das Wissen des einzelnen Mitarbeiters muss immer auf dem aktuellsten Stand sein, damit er sich den wechselnden Herausforderungen stellen kann. Nur so wird man sich im immer härter werdenden Beratungsumfeld behaupten können.
+                    </p>
+                    <br>
+                    <p>
+                        Die meisten Kunden sind international positioniert und verfügen über eine Länderorganisation, was den Wissensaustausch innerhalb der Unternehmung erschwert. Dieser Fakt erfordert eine effiziente Anbindung an die Konzernzentrale, weil dort der aktuelle Wissensaustausch regelmässig stattfindet. Die Zentrale ist dafür verantwortlich, dass die Länderorganisationen mit dem aktuellen Wissen versorgt werden.
+                    </p>
+                    <br>
+                    <p>
+                        Unternehmungen beschreiten heute bereits den mobilen digitalen Weg über Tablets und Smartphones, um ihre Mitarbeiter auf der ganzen Welt mit den neusten Zahlen und Fakten zu Projekten schnell und unkompliziert auf den aktuellen Stand zu bringen.
+                    </p>
+                    <br>
+                    <br>
+                    <p>
+                        OBJECT ist Experte in der Digitalisierung für den deutschsprachigen Raum und realisiert anspruchsvolle IT-Lösungen in den Bereichen ECM, Capturing, DMS, Collaboration, Workflows (BPM), Portale, Open Source Security und Archivierung.
                     </p>
 
-                    <blockquote>
-                        Einen angemessenen und sinnvollen Umgang mit mobilen Geräten, ständiger Erreichbarkeit, Vernetztheit und den schier unglaublich scheinenden Möglichkeiten des Internets zu finden und zu etablieren - für die Generationen von heute und für kommende Generationen – wird eine der grössten Herausforderungen der kommenden Dekade sein für Gesellschaft, Politik, Wirtschaft und Ethik.
-                    </blockquote>
-        
-                    <p class="before-list">
+                    <p>
+                        Nach individuellen Anforderungen und für unterschiedlichste Umgebungen integriert, betreut und erweitert OBJECT massgeschneiderte Systeme auf Basis von modernsten Open Source Technologien und agilen Entwicklungsmethoden.
+                    </p>
 
-                        Digitalisieren = Rationalisieren?
-                        
-                        Im Zuge der Digitalisierung wird oft von Automatisierung, Optimierung und Rationalisierung gesprochen. Viele Berufe werden verschwinden, viele Arbeiter durch Maschinen und Roboter ersetzt, Mitarbeiter im Dienstleistungssektor durch Systeme und Prozesse ausgewechselt und immer mehr Aufgaben digital abgearbeitet. <br>
-                        
-                        Diese Umstände machen vielen Menschen Angst und stiften Verunsicherung. Die digitale Revolution bietet nicht nur Chancen, sondern birgt auch grosse Gefahren mit sich. Ethik, Moral und Wertevorstellungen sind wesentliche Elemente in der Auseinandersetzung mit der Digitalisierung. Die heutige Zeit ist unglaublich spannend und die Weichen werden gestellt. <br>
-                        
-                        Im Zuge der Auseinandersetzung mit der Digitalisierung ergeben viele Fragen, die uns alle betreffen und tangieren:
-                    </p>  
-                        <ul>
-                                <li>Was wird uns die digitale Revolution bringen?</li>
-                                <li>Werden wir in der Lage sein die zusätzlichen Möglichkeiten und die zusätzliche Produktivität sinnbringend zu nutzen und die Lebensqualität aller zu verbessern?</li>
-                                <li>Wird das Individuum die adäquate Wertschätzung und Anerkennung für sein/ihr tun und sein von Gesellschaft, Arbeitgeber und Politik erhalten?</li>
-                                <li>Wie werden die neu verfügbaren Werkzeugen genutzt?</li>
-                                <li>Welche Gefahren bergen die neuen Möglichkeiten und Werkzeuge und wie können wir uns davor schützen?</li>
-                            </ul>
-                       
-                    <p>        
+                    <p>
+                        Gemeinsam mit Partnern wie Alfresco, Ephesoft, DocuSign und Black Duck hilft OBJECT Organisationen aller Branchen mit ihren Daten und Informationen optimal umzugehen.
+                    </p>
 
-                        Wir wissen es nicht, können es aber alle beeinflussen: Denn Möglichkeiten und Privilegien bringen auch Verantwortung mit sich. Jeder ist angehalten sich Gedanken zu machen über Sinn und Unsinn der Digitalisierung und Globalisierung.
-                        </p>
-
-                        <blockquote>
-                            Jedermann bestimmt in seiner Reichweite mit seinem Tun und Nicht-tun die weitere Entwicklung und Nutzung der neuen Möglichkeiten und Gefahren.
-                        </blockquote>
-
-                        <p>
-                            Wo die Daten liegen und wem sie gehören <br>
-
-                            Die Welt ist im Wandel und unzählige Prozesse aus unserem täglichen Leben werden digitalisiert und produzieren somit Daten. Wie mit diesen Daten umgegangen werden soll ist eine aktuelle Kontroverse, die uns noch länger beschäftigen wird. Umso wichtiger ist es, sich mit diesen Fragen auseinander zu setzen. Wirtschaftliche, rechtliche und ethnische Perspektiven greifen ineinander und die Grenzen werden ausgelotet. <br>
-
-                            Das Bedürfnis nach Autonomie, Kontrolle, Datenhoheit, Sicherheit und Gewissheit bedingt anspruchsvoller, konzeptioneller und aufwendiger Arbeit. Politik und Wirtschaft sind mehrheitlich überfordert von den neuen Möglichkeiten und Gefahren. Immerhin herrscht eine allgemeine Achtsamkeit dank den Enthüllungen von Bradley Manning und Julian Assange über WikiLeaks und allen voran Edward Snowden, der der Welt die Augen geöffnet – bzw. den Spitzeln der Welt die Tarnung heruntergerissen hat. <br>
-
-                            Quote: Weitere Ereignisse in jüngster Zeit bestätigen die schlimmsten Befürchtungen in Bezug auf Industriespionage, gezielte Attacken und den immensen Sicherheitsrisiken, denen Mensch und Maschine im Internet ausgeliefert sind. Die Debatten über Daten-Management, -Integrität und -Sicherheit laufen in vielen Kreisen und werden uns noch lange beschäftigen. <br>
-                        </p>
-
-                        <p>
-                            Cloud <br>
-                            Das beste Beispiel für Chancen und Gefahren stellt momentan die Cloud dar. Richtig angewendet bringen Clouds – ob private oder public – immense Möglichkeiten und ein hohes Mass an Effizienz. Abhängigkeiten, Intransparenz, gesetzliche Vorgaben und Sicherheitsbedenken ermutigen jedoch nicht, den Schritt in die Cloud zu wagen.
-                        </p>
-
-                        <blockquote>
-                            Die Cloud gibt es schon lange. Mittlerweile heisst sie einfach Cloud und es wissen alle, dass im Internet erreichbare Applikationen und Daten als „Cloud“(-Service) bezeichnet werden
-                        </blockquote>
-
-                        <p>
-                            
-
-                            Heutzutage liegt eigentlich fast alles in einer Cloud, denn die Daten sind über Internet erreichbar. Cloud-Services von grossen internationalen Anbietern sind nicht zu vergleichen mit privaten Clouds, Portalen und Micro Services „aus der Wolke“. <br>
-
-                            Die Cloud wird nicht so heiss gegessen wie sie gekocht wird. Von Medien und Experten hochgejubelt müsste die Verbreitung längst fortgeschrittener sein. Im Deutschsprachigen Raum jedoch vertrauen die meisten Unternehmen und Organisationen nach wie vor ihren eigenen Server- und Storage-Infrastrukturen und der Schritt in die Cloud ist zum aktuellen Zeitpunkt keine tragbare Option.
-
-                        </p>
-
-                        <blockquote>
-                            Zudem müssen die meisten staatlichen Organisationen sicherstellen, dass ihre Daten das Land nicht verlassen. Unternehmen aus der Privatwirtschaft wollen grösstenteils ihre Datenhoheit und -Kontrolle nicht aufgeben und setzen wenn überhaupt auf eigene und private Cloud-Systeme
-                        </blockquote>
-
-                        <p>
-                            Für Endverbraucher sieht die Situation ganz anders aus: Viele Cloud-Dienste sind beliebt, verbreitet und vielfach kostenfrei. Sei es über eine App oder über den Browser: Dating-Plattformen, Marktplätze, Sharing-Sites, Social Media, Chatting- und Posting-Plattformen haben den Alltag verändert. Diese Veränderung wirft Fragen auf in Bezug auf Datensicherheit, Datenhoheit, Datenschutz, Datenauswertung und Datennutzung.
-                        </p>
-
-                        <blockquote>
-                            Wem gehören Daten? Wer darf sie nutzen, auswerten, verwerten und weiterveräussern? „Bezahlt“ der Endverbraucher mit seinen Daten und Informationen? Wissen die Nutzer von kostenlosen „Cloud Angeboten“ überhaupt, dass das Businessmodell der Anbieter in vielen Fällen darauf aufbaut, aus den Kundendaten Gewinne zu erzielen?
-                        </blockquote>
-
-                        <p>
-                            Die Nutzung solcher Dienste und Plattformen wird in Zukunft noch viel extensiver. Die grossen Anbieter unterbieten sich regelmässig mit dem einzigen Ziel, Marktanzeile dazu gewinnen zu können. Viele Cloud-Dienste bieten mittlerweile unlimitiertes Speichervolumen. Das Ziel dahinter ist naheliegend: Wer die Daten kontrolliert, kontrolliert den Kanal. Wer den Kanal kontrolliert hat die Macht. Und wer die Macht hat, kann Profit daraus ziehen. Sei es durch Veräusserung von Nutzerdaten, gezielter Werbung, oder Verkauf von Services und Applikationen an Endkunden, welche die Daten mit Mehrwert anreichert. Umso wichtiger ist die Auseinandersetzung, wie mit Daten umgegangen werden soll.
-                        </p>
-
-                        <p>
-                            Fazit
-                        </p>
-
-                        <blockquote>
-                            Es ist spannend und bleibt spannend. Die neuen Medien, das Internet der Dinge, Cyber Security und die Sharing Economy werden uns noch länger auf Trab halten. Das „Big Picture“ nicht aus den Augen zu verlieren, die richtigen Entscheidungen zu treffen, sich etwas zu trauen und für seine Entscheidungen geradezu stehen sind die elementaren und (überlebens-)wichtigen Eigenschaften von heute – für Morgen.
-                        </blockquote>
-
-                        <p>
-                            
-
-                            OBJECT ist Experte in der Digitalisierung für den deutschsprachigen Raum und realisiert anspruchsvolle IT-Lösungen in den Bereichen ECM, Capturing, DMS, Collaboration, Workflows (BPM), Portale, Open Source Security und Archivierung. <br>
-
-                            Nach individuellen Anforderungen und für unterschiedlichste Umgebungen integriert, betreut und erweitert OBJECT massgeschneiderte Systeme auf Basis von modernsten Open Source Technologien und agilen Entwicklungsmethoden. <br>
-
-                            Gemeinsam mit Partnern wie Alfresco, Ephesoft, DocuSign und Black Duck hilft OBJECT Organisationen aller Branchen mit ihren Daten und Informationen optimal umzugehen. <br>
-
-                            Mit einer ganzheitlichen Vorgehensweise unterstützt OBJECT auf strategischer, technologischer und persönlicher Ebene und schafft somit Mehrwerte, welche nachhaltig zum Unternehmenserfolg beitragen. <br>
-
-                        </p>
-
+                    <p>
+                        Mit einer ganzheitlichen Vorgehensweise unterstützt OBJECT auf strategischer, technologischer und persönlicher Ebene und schafft somit Mehrwerte, welche nachhaltig zum Unternehmenserfolg beitragen.
+                    </p>
                     <hr class="separator full-width bottom-space">
 
                 </section>
                 
                 <aside class="contact">
-                    <div class="employee">
 
-                        <h2 class="employee-title">Ihr Ansprechspartner</h2>
+                    {{ partial "emploee" . }}
 
-                        <img src="{{"img/employee.jpeg"| relURL}}" alt="Employee pic">
-
-                        <div class="employee-name">{{ .Params.employeName }}</div>
-
-                        <div class="employee-position">{{ .Params.employePosition }}</div>
-
-                        <div class="employee-links">
-                            <a href="#" data-modal="true" data-modal-type="recall" class="call"><i class="icon icon-call"></i>Ich wünsche einen Rückruf</a>
-                            <a href="#" data-modal="true" data-modal-type="email" class="mail"><i class="icon icon-mail"></i>Schreiben Sie mir eine Mail</a>
-                            <a href="#recommended" class="articles scroll-page"><i class="icon icon-down"></i>Empfohlene Artikel ansehen</a>
-                        </div>
-
-                    </div>
                 </aside>
-
-
-                
-
-
 
             </div>
         </div>
 
+
         <section id="recommended" class="recommended">
             <div class="container">
 
-                <h2 class="recommended-title">Empfohlene Artikel zu diesem Thema:</h2>
+                <h2 class="recommended-title">EMPFOHLENE ARTIKEL ZU DIESEM THEMA:</h2>
 
-                <section class="recommended-cat">
+                    <section class="recommended-cat">
 
-                    <h3 class="cat-title">Sektoren</h3>
+                        <h3 class="cat-title">
+                            {{ with .Site.GetPage "/angebot" }}
+                                {{ .Title }}
+                            {{ end }}
+                        </h3>
 
-                    <div class="article-wrapper">
-                        <a href="#" class="article-link">
-                            <article class="recommended-article">
+                            {{ range where $.Page.Site.RegularPages.ByDate "Section" "angebot" }}
 
-                                <h3 class="article-title">Legal</h3>
-                                
-                                <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        
-                            </article>
-                        </a>
-                    </div>
+                                <div class="article-wrapper">
+                                    <a href="{{ .URL }}" class="article-link">
+                                        <article class="recommended-article">
 
-                    <div class="article-wrapper">
-                        <a href="#" class="article-link">
-                            <article class="recommended-article">
-
-                                <h3 class="article-title">Legal</h3>
-                                
-                                <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        
-                            </article>
-                        </a>
-                    </div>
-
-                    <div class="article-wrapper">
-                        <a href="#" class="article-link">
-                            <article class="recommended-article">
-
-                                <h3 class="article-title">Legal</h3>
-                                
-                                <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        
-                            </article>
-                        </a>
-                    </div>
-
-                    <div class="article-wrapper">
-                        <a href="#" class="article-link">
-                            <article class="recommended-article">
-
-                                <h3 class="article-title">Legal</h3>
-                                
-                                <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        
-                            </article>
-                        </a>
-                    </div>
-
-                    <div class="article-wrapper">
-                            <a href="#" class="article-link">
-                                <article class="recommended-article">
-    
-                                    <h3 class="article-title">Legal</h3>
+                                            <h3 class="article-title">{{ .Params.blocktitle }}</h3>
+                                            
+                                            <p class="article-text">{{ .Params.description }}</p>
                                     
-                                    <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                            
-                                </article>
-                            </a>
-                    </div>
+                                        </article>
+                                    </a>
+                                </div>
+                        
+                            {{ end }}
+
+                    </section>
+
+                    <section class="recommended-cat">
+
+                        <h3 class="cat-title">
+                            {{ with .Site.GetPage "/blog/post" }}
+                                {{ .Title }}
+                            {{ end }}
+                        </h3>
+
+                        {{ range where $.Page.Site.RegularPages.ByDate "Section" "blog" }}
+
+                            <div class="article-wrapper">
+                                <a href="{{ .URL }}" class="article-link">
+                                    <article class="recommended-article">
+
+                                        <h3 class="article-title">{{ .Params.blocktitle }}</h3>
+                                        
+                                        <p class="article-text">{{ .Params.description }}</p>
+                                
+                                    </article>
+                                </a>
+                            </div>
                     
+                        {{ end }}
+
+                    </section>
+
+
+                    <section class="recommended-cat">
+
+                        <h3 class="cat-title">
+                            {{ with .Site.GetPage "/technologien" }}
+                                {{ .Title }}
+                            {{ end }}
+                        </h3>
+
+                        {{ range where $.Page.Site.RegularPages.ByDate "Section" "technologien" }}
+
+                            <div class="article-wrapper">
+                                <a href="{{ .URL }}" class="article-link">
+                                    <article class="recommended-article">
+
+                                        <h3 class="article-title">{{ .Params.blocktitle }}</h3>
+                                        
+                                        <p class="article-text">{{ .Params.description }}</p>
+                                
+                                    </article>
+                                </a>
+                            </div>
                     
-                </section>  
+                        {{ end }}
 
-                <section class="recommended-cat">
-
-                    <h3 class="cat-title">Sektoren</h3>
-
-                    <div class="article-wrapper">
-                        <a href="#" class="article-link">
-                            <article class="recommended-article product">
-
-                                <span class="icon icon-product_cm"></span>
-
-                                <h3 class="article-title">Legal</h3>
-                                
-                                <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        
-                            </article>
-                        </a>
-                    </div>
-
-                    <div class="article-wrapper">
-                        <a href="#" class="article-link">
-                            <article class="recommended-article">
-
-                                <h3 class="article-title">Legal</h3>
-                                
-                                <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        
-                            </article>
-                        </a>
-                    </div>
-
-                    <div class="article-wrapper">
-                        <a href="#" class="article-link">
-                            <article class="recommended-article">
-
-                                <h3 class="article-title">Legal</h3>
-                                
-                                <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        
-                            </article>
-                        </a>
-                    </div>
-
-                    <div class="article-wrapper">
-                        <a href="#" class="article-link">
-                            <article class="recommended-article">
-
-                                <h3 class="article-title">Legal</h3>
-                                
-                                <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        
-                            </article>
-                        </a>
-                    </div>
-                </section> 
-
-                <section class="recommended-cat">
-
-                    <h3 class="cat-title">Sektoren</h3>
-
-                    <div class="article-wrapper">
-                        <a href="#" class="article-link">
-                            <article class="recommended-article">
-
-                                <h3 class="article-title">Legal</h3>
-                                
-                                <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        
-                            </article>
-                        </a>
-                    </div>
-
-                    <div class="article-wrapper">
-                        <a href="#" class="article-link">
-                            <article class="recommended-article">
-
-                                <h3 class="article-title">Legal</h3>
-                                
-                                <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        
-                            </article>
-                        </a>
-                    </div>
-
-                    <div class="article-wrapper">
-                        <a href="#" class="article-link">
-                            <article class="recommended-article">
-
-                                <h3 class="article-title">Legal</h3>
-                                
-                                <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        
-                            </article>
-                        </a>
-                    </div>
-
-                    
-                    
-                </section> 
+                    </section>
 
                 
             </div>
         </section>
-
 
          <!-- POPUPS -->
         
@@ -399,70 +206,71 @@
 
     </div>
 
+
     <div id="modal-overlay">
-            <div id="modal-box">
-                <div id="modal-header">
-                    <h2 class="modal-box__title">ICH WÜNSCHE EINEN RÜCKRUF</h2>
-                    <button class="cls-modal">
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-                <div id="modal-content">
-    
-                    <form action="#" id="modal-form" method="POST">
-    
-                        <div class="form-left">
-                            <label class="modal-form__name">
-                                <span class="modal-label">Ihr Name*</span>
-                                <input type="text" name="name" placeholder="" required>
-                            </label>
-                            <label class="modal-form__lastname">
-                                <span class="modal-label">Ihr Vorname*</span>
-                                <input type="text" name="lastname" placeholder="" required>
-                            </label>
-                            <label class="modal-form__company">
-                                <span class="modal-label">Firma*</span>
-                                <input type="text" name="company" placeholder="" required>
-                            </label>
-                            <label class="modal-form__email">
-                                <span class="modal-label">E-Mail</span>
-                                <input type="email" name="email" placeholder="">
-                            </label>
-                            <label class="modal-form__phone">
-                                <span class="modal-label">Telefonnummer*</span>
-                                <input type="tel" name="phone" placeholder="" required>
-                            </label>
-                        </div>
-    
-                        <div class="form-right">
-                            <label class="modal-form__message">
-                                <span class="modal-label">Um was geht es?*</span>
-                                <textarea name="message"></textarea>
-                            </label>
-                            <label class="modal-form__captcha">
-                                <div class="form-group">
-                                    <span class="modal-label">Bitte tragen Sie ein Captcha ein*</span>
-                                    <input type="text" name="modal-captcha" required>
-                                </div>
-                                <span id="modal-captcha">0000</span>
-                            </label>
-                            <p class="modal-form__text">
-                                    Hinweis: Bitte beachten Sie, dass Ihre Daten zum Zweck der Kontaktaufnahme gespeichert werden. Ihre Daten werden vertraulich behandelt und nicht an Dritte weitergegeben.
-                            </p>
-                            <label class="modal-form__form-agree">
-                                <input type="checkbox" name="modal-agree" required>
-                                <span class="modal-label">Ich möchte zukünftig den Newsletter erhalten</span>
-                            </label>
-                        </div>
-    
-                        <div class="form-bottom">
-                            <button class="green-btn" type="submit">senden</button>
-                        </div>
-    
-                    </form>
-                </div>
+        <div id="modal-box">
+            <div id="modal-header">
+                <h2 class="modal-box__title">ICH WÜNSCHE EINEN RÜCKRUF</h2>
+                <button class="cls-modal">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div id="modal-content">
+
+                <form action="#" id="modal-form" method="POST">
+
+                    <div class="form-left">
+                        <label class="modal-form__name">
+                            <span class="modal-label">Ihr Name*</span>
+                            <input type="text" name="name" placeholder="" required>
+                        </label>
+                        <label class="modal-form__lastname">
+                            <span class="modal-label">Ihr Vorname*</span>
+                            <input type="text" name="lastname" placeholder="" required>
+                        </label>
+                        <label class="modal-form__company">
+                            <span class="modal-label">Firma*</span>
+                            <input type="text" name="company" placeholder="" required>
+                        </label>
+                        <label class="modal-form__email">
+                            <span class="modal-label">E-Mail</span>
+                            <input type="email" name="email" placeholder="">
+                        </label>
+                        <label class="modal-form__phone">
+                            <span class="modal-label">Telefonnummer*</span>
+                            <input type="tel" name="phone" placeholder="" required>
+                        </label>
+                    </div>
+
+                    <div class="form-right">
+                        <label class="modal-form__message">
+                            <span class="modal-label">Um was geht es?*</span>
+                            <textarea name="message"></textarea>
+                        </label>
+                        <label class="modal-form__captcha">
+                            <div class="form-group">
+                                <span class="modal-label">Bitte tragen Sie ein Captcha ein*</span>
+                                <input type="text" name="modal-captcha" required>
+                            </div>
+                            <span id="modal-captcha">0000</span>
+                        </label>
+                        <p class="modal-form__text">
+                                Hinweis: Bitte beachten Sie, dass Ihre Daten zum Zweck der Kontaktaufnahme gespeichert werden. Ihre Daten werden vertraulich behandelt und nicht an Dritte weitergegeben.
+                        </p>
+                        <label class="modal-form__form-agree">
+                            <input type="checkbox" name="modal-agree" required>
+                            <span class="modal-label">Ich möchte zukünftig den Newsletter erhalten</span>
+                        </label>
+                    </div>
+
+                    <div class="form-bottom">
+                        <button class="green-btn" type="submit">senden</button>
+                    </div>
+
+                </form>
             </div>
         </div>
+    </div>
 
-        {{ end }}
+{{ end }}

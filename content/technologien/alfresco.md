@@ -5,6 +5,13 @@ draft: true
 
 contTitle: "Alfresco"
 employeName: "Oliver Huser"
+employePosition: "Senior Software Engineer"
+specialclass: "alfresco"
+
+blocktitle: "Alfresco"
+description: "Alfresco description"
+
+empphoto: "employee.jpeg"
 ---
 
 

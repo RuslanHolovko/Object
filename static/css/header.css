@@ -106,9 +106,9 @@
     color:#b4b4b4;
     font-size:15px;
     font-family:'Karla', sans-serif;
-    text-transform:none;
     letter-spacing:2px;
-    padding:0
+    padding:0;
+    text-transform: capitalize;
 }
 .nav__sub-menu .nav__sub-menu__item a:hover{
     color:#94d60a
@@ -267,21 +267,26 @@ input[name=page-search]{
     position:fixed;
     top:0;
     left:0;
-    background-color:rgba(0, 0, 0, 0.5);
     height:100vh;
-    width:100vw;
-    visibility:hidden;
-    opacity:0
+    width:100%;
+    max-width: 360px;
+        -webkit-transform:translateX(-100%);
+    -ms-transform:translateX(-100%);
+    transform:translateX(-100%);
+        -webkit-transition:-webkit-transform .6s cubic-bezier(.77,0,.175,1);
+    transition:-webkit-transform .6s cubic-bezier(.77,0,.175,1);
+    -o-transition:transform .6s cubic-bezier(.77,0,.175,1);
+    transition:transform .6s cubic-bezier(.77,0,.175,1);
+    transition:transform .6s cubic-bezier(.77,0,.175,1),-webkit-transform .6s cubic-bezier(.77,0,.175,1);
+    z-index: 100;
 }
-.mob-menu--visible{
-    visibility:visible;
-    opacity:1
+
+.mob-menu--wrapper.mob-menu--visible{
+    -webkit-transform:translateX(0)!important;
+    -ms-transform:translateX(0)!important;
+    transform:translateX(0)!important;
 }
-.mob-menu--visible .mob-menu{
-    -webkit-transform:translateX(0);
-    -ms-transform:translateX(0);
-    transform:translateX(0)
-}
+
 .mob-menu{
     position:relative;
     display:block;
@@ -289,9 +294,6 @@ input[name=page-search]{
     width:100%;
     max-width:360px;
     height:100%;
-    -webkit-transform:translateX(-100%);
-    -ms-transform:translateX(-100%);
-    transform:translateX(-100%);
     padding:30px
 }
 .mob-menu__logo{
@@ -441,7 +443,8 @@ input[name=page-search]{
     }
 }
 @media (max-width:479px){
-    .mob-menu{
+    .mob-menu,
+    .mob-menu--wrapper{
         max-width:100%
     }
     .navbar{

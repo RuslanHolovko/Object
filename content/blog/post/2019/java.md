@@ -6,7 +6,11 @@ draft: true
 contTitle: "Java"
 employeName: "John Dahlbak"
 employePosition: "Java Developer"
-cardTitle: "Java Developer 100%"
+cardTitle: "Java"
+
+blocktitle: "Java title"
+description: "Java News"
+empphoto: "phillip_dabel.jpg"
 ---
 
 This is post-1 content

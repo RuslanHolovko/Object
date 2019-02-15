@@ -23,6 +23,26 @@
                 <section class="main-content">
                     <h2 class="content-title">{{ .Params.contTitle }}</h2>
 
+                    {{ .Content }}
+
+<!--                     {{ range .Params.features }}
+                        <h2>{{ . }}</h2>
+                    {{ end }}
+
+                    <ul>
+                        {{ range .Params.services.name }}
+                            <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
+
+                    <div>
+
+                        {{ range .Params.services.tags }}
+                            <li>{{ . }}</li>
+                        {{ end }}
+
+                    </div> -->
+
                     <hr class="separator">
 
                     <p class="intro-text">Was spricht für Hybrid-Nearshoring und wo liegen die Vorteile? Wieso Outsourcen (Offshore)?</p>
@@ -141,29 +161,10 @@
                 </section>
                 
                 <aside class="contact">
-                    <div class="employee">
 
-                        <h2 class="employee-title">Ihr Ansprechspartner</h2>
+                    {{ partial "emploee" . }}
 
-                        <img src="{{"img/employee.jpeg"| relURL}}" alt="Employee pic">
-
-                        <div class="employee-name">{{ .Params.employeName }}</div>
-
-                        <div class="employee-position">{{ .Params.employePosition }}</div>
-
-                        <div class="employee-links">
-                            <a href="#" data-modal="true" data-modal-type="recall" class="call"><i class="icon icon-call"></i>Ich wünsche einen Rückruf</a>
-                            <a href="#" data-modal="true" data-modal-type="email" class="mail"><i class="icon icon-mail"></i>Schreiben Sie mir eine Mail</a>
-                            <a href="#recommended" class="articles scroll-page"><i class="icon icon-down"></i>Empfohlene Artikel ansehen</a>
-                        </div>
-
-                    </div>
                 </aside>
-
-
-                
-
-
 
             </div>
         </div>
@@ -173,172 +174,85 @@
 
                 <h2 class="recommended-title">Empfohlene Artikel zu diesem Thema:</h2>
 
-                <section class="recommended-cat">
+                    <section class="recommended-cat">
 
-                    <h3 class="cat-title">Sektoren</h3>
+                        <h3 class="cat-title">
+                            {{ with .Site.GetPage "/angebot" }}
+                                {{ .Title}}
+                            {{ end }}
+                        </h3>
 
-                    <div class="article-wrapper">
-                        <a href="#" class="article-link">
-                            <article class="recommended-article">
+                            {{ range where $.Page.Site.RegularPages.ByDate "Section" "angebot" }}
 
-                                <h3 class="article-title">Legal</h3>
-                                
-                                <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        
-                            </article>
-                        </a>
-                    </div>
+                                <div class="article-wrapper">
+                                    <a href="{{ .URL }}" class="article-link">
+                                        <article class="recommended-article">
 
-                    <div class="article-wrapper">
-                        <a href="#" class="article-link">
-                            <article class="recommended-article">
-
-                                <h3 class="article-title">Legal</h3>
-                                
-                                <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        
-                            </article>
-                        </a>
-                    </div>
-
-                    <div class="article-wrapper">
-                        <a href="#" class="article-link">
-                            <article class="recommended-article">
-
-                                <h3 class="article-title">Legal</h3>
-                                
-                                <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        
-                            </article>
-                        </a>
-                    </div>
-
-                    <div class="article-wrapper">
-                        <a href="#" class="article-link">
-                            <article class="recommended-article">
-
-                                <h3 class="article-title">Legal</h3>
-                                
-                                <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        
-                            </article>
-                        </a>
-                    </div>
-
-                    <div class="article-wrapper">
-                            <a href="#" class="article-link">
-                                <article class="recommended-article">
-    
-                                    <h3 class="article-title">Legal</h3>
+                                            <h3 class="article-title">{{ .Params.blocktitle }}</h3>
+                                            
+                                            <p class="article-text">{{ .Params.description }}</p>
                                     
-                                    <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                            
-                                </article>
-                            </a>
-                    </div>
+                                        </article>
+                                    </a>
+                                </div>
+                        
+                            {{ end }}
+
+                    </section>
+
+
+                    <section class="recommended-cat">
+
+                        <h3 class="cat-title">
+                            {{ with .Site.GetPage "/blog" }}
+                                {{ .Title }}
+                            {{ end }}
+                        </h3>
+
+                        {{ range where $.Page.Site.RegularPages.ByDate "Section" "blog" }}
+
+                            <div class="article-wrapper">
+                                <a href="{{ .URL }}" class="article-link">
+                                    <article class="recommended-article">
+
+                                        <h3 class="article-title">{{ .Params.blocktitle }}</h3>
+                                        
+                                        <p class="article-text">{{ .Params.description }}</p>
+                                
+                                    </article>
+                                </a>
+                            </div>
                     
+                        {{ end }}
+
+                    </section>
+
+
+                    <section class="recommended-cat">
+
+                        <h3 class="cat-title">
+                            {{ with .Site.GetPage "/technologien" }}
+                                {{ .Title }}
+                            {{ end }}
+                        </h3>
+
+                        {{ range where $.Page.Site.RegularPages.ByDate "Section" "technologien" }}
+
+                            <div class="article-wrapper">
+                                <a href="{{ .URL }}" class="article-link">
+                                    <article class="recommended-article">
+
+                                        <h3 class="article-title">{{ .Params.blocktitle }}</h3>
+                                        
+                                        <p class="article-text">{{ .Params.description }}</p>
+                                
+                                    </article>
+                                </a>
+                            </div>
                     
-                </section>  
+                        {{ end }}
 
-                <section class="recommended-cat">
-
-                    <h3 class="cat-title">Sektoren</h3>
-
-                    <div class="article-wrapper">
-                        <a href="#" class="article-link">
-                            <article class="recommended-article product">
-
-                                <span class="icon icon-product_cm"></span>
-
-                                <h3 class="article-title">Legal</h3>
-                                
-                                <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        
-                            </article>
-                        </a>
-                    </div>
-
-                    <div class="article-wrapper">
-                        <a href="#" class="article-link">
-                            <article class="recommended-article">
-
-                                <h3 class="article-title">Legal</h3>
-                                
-                                <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        
-                            </article>
-                        </a>
-                    </div>
-
-                    <div class="article-wrapper">
-                        <a href="#" class="article-link">
-                            <article class="recommended-article">
-
-                                <h3 class="article-title">Legal</h3>
-                                
-                                <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        
-                            </article>
-                        </a>
-                    </div>
-
-                    <div class="article-wrapper">
-                        <a href="#" class="article-link">
-                            <article class="recommended-article">
-
-                                <h3 class="article-title">Legal</h3>
-                                
-                                <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        
-                            </article>
-                        </a>
-                    </div>
-                </section> 
-
-                <section class="recommended-cat">
-
-                    <h3 class="cat-title">Sektoren</h3>
-
-                    <div class="article-wrapper">
-                        <a href="#" class="article-link">
-                            <article class="recommended-article">
-
-                                <h3 class="article-title">Legal</h3>
-                                
-                                <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        
-                            </article>
-                        </a>
-                    </div>
-
-                    <div class="article-wrapper">
-                        <a href="#" class="article-link">
-                            <article class="recommended-article">
-
-                                <h3 class="article-title">Legal</h3>
-                                
-                                <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        
-                            </article>
-                        </a>
-                    </div>
-
-                    <div class="article-wrapper">
-                        <a href="#" class="article-link">
-                            <article class="recommended-article">
-
-                                <h3 class="article-title">Legal</h3>
-                                
-                                <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        
-                            </article>
-                        </a>
-                    </div>
-
-                    
-                    
-                </section> 
-
+                    </section>
                 
             </div>
         </section>

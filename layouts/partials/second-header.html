@@ -1,3 +1,31 @@
+        <div class="mob-menu--wrapper">
+            <div class="mob-menu">
+
+                <a href="/" class="mob-menu__logo">
+                    <img src="{{"img/logo_positiv_mobile_retina.png" | relURL}}" alt="Mobile logo">
+                </a>
+
+                <ul class="mob-menu__main-nav">
+                    <li class="mob-menu__main-nav__item"><a href="/angebot">Angebot</a></li>
+                    <li class="mob-menu__main-nav__item"><a href="#">Lösungen</a></li>
+                    <li class="mob-menu__main-nav__item"><a href="/blog">Blog</a></li>
+                    <li class="mob-menu__main-nav__item"><a href="#">Kontakt</a></li>
+                </ul>
+
+                <ul class="mob-menu__second-nav">
+
+					{{ range where .Site.RegularPages "Section" "unternehmen"  }}
+                  	  <li class="mob-menu__second-nav__item"><a href="{{ .URL }}">{{ .Title }}</a></li>
+					{{ end }}
+                </ul>
+
+                <button class="mob-menu__close-btn">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
         <header id="top" class="page-header" style="background-image: url({{"img/header_article.gif" | relURL}});">
 
             <!-- NAVBAR -->
@@ -11,7 +39,7 @@
                         <li class="main-nav__item"><a href="/angebot">Angebot</a>
                             <ul class="nav__sub-menu">
 
-                                {{ range where .Site.Pages "Section" "angebot"}}
+                                {{ range where .Site.RegularPages "Section" "angebot"}}
                                     <li class="nav__sub-menu__item"><a href="{{ .URL }}">{{ .Title }}</a></li>
                                 {{ end }}
 
@@ -21,20 +49,14 @@
                         <li class="main-nav__item"><a href="{{ .URL }}">Lösungen</a></li>
                         <li class="main-nav__item"><a href="/technologien">Technologien</a>
                             <ul class="nav__sub-menu">
-<!--                                 <li class="nav__sub-menu__item"><a href="#">Alfresco</a></li>
-                                <li class="nav__sub-menu__item"><a href="#">Ephesoft</a></li>
-                                <li class="nav__sub-menu__item"><a href="#">Dogusign</a></li>
-                                <li class="nav__sub-menu__item"><a href="#">Liferay</a></li>
-                                <li class="nav__sub-menu__item"><a href="#">Java</a></li>
-                                <li class="nav__sub-menu__item"><a href="#">C#</a></li> -->
-                                {{ range where .Site.Pages "Section" "technologien"}}
+                                {{ range where .Site.RegularPages "Section" "technologien"}}
                                      <li class="nav__sub-menu__item"><a href="{{ .URL }}">{{ .Title }}</a></li>
                                 {{ end }}
                             </ul>
                         </li>
                         <li class="main-nav__item"><a href="/blog">Blog</a>
                             <ul class="nav__sub-menu">
-                                {{ range where .Site.Pages "Section" "blog"}}
+                                {{ range where .Site.RegularPages "Section" "blog"}}
                                      <li class="nav__sub-menu__item"><a href="{{ .URL }}">{{ .Title }}</a></li>
                                 {{ end }}
                             </ul>
@@ -61,39 +83,6 @@
                             <path fill="#fff" d="M51.6,96.7c11,0,21-3.9,28.8-10.5l35,35c0.8,0.8,1.8,1.2,2.9,1.2s2.1-0.4,2.9-1.2c1.6-1.6,1.6-4.2,0-5.8l-35-35   c6.5-7.8,10.5-17.9,10.5-28.8c0-24.9-20.2-45.1-45.1-45.1C26.8,6.5,6.5,26.8,6.5,51.6C6.5,76.5,26.8,96.7,51.6,96.7z M51.6,14.7   c20.4,0,36.9,16.6,36.9,36.9C88.5,72,72,88.5,51.6,88.5c-20.4,0-36.9-16.6-36.9-36.9C14.7,31.3,31.3,14.7,51.6,14.7z"></path>
                         </svg>
                     </button>
-    
-                </div>
-    
-                <div class="mob-menu--wrapper">
-                    <div class="mob-menu">
-    
-                        <a href="/" class="mob-menu__logo">
-                            <img src="{{"img/logo_positiv_mobile_retina.png" | relURL}}" alt="Mobile logo">
-                        </a>
-    
-                        <ul class="mob-menu__main-nav">
-                            <li class="mob-menu__main-nav__item"><a href="#">Angebot</a></li>
-                            <li class="mob-menu__main-nav__item"><a href="#">Lösungen</a></li>
-                            <li class="mob-menu__main-nav__item"><a href="#">Blog</a></li>
-                            <li class="mob-menu__main-nav__item"><a href="#">Kontakt</a></li>
-                        </ul>
-    
-                        <ul class="mob-menu__second-nav">
-                            <li class="mob-menu__second-nav__item"><a href="#">Unternehmen</a></li>
-                            <li class="mob-menu__second-nav__item"><a href="#">Über Uns</a></li>
-                            <li class="mob-menu__second-nav__item"><a href="#">Team</a></li>
-                            <li class="mob-menu__second-nav__item"><a href="#">Kunden & Partner</a></li>
-                            <li class="mob-menu__second-nav__item"><a href="#">Veranstaltungen</a></li>
-                            <li class="mob-menu__second-nav__item"><a href="#">Offene Stellen</a></li>
-                            <li class="mob-menu__second-nav__item"><a href="#">Kontakt</a></li>
-                            <li class="mob-menu__second-nav__item"><a href="#">Mediathek</a></li>
-                        </ul>
-    
-                        <button class="mob-menu__close-btn">
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </div>
                 </div>
     
                 <!-- end Mobile navbar -->
@@ -103,12 +92,12 @@
                         <li class="second-nav__item"><a href="#">Mediathek</a></li>
                         <li class="second-nav__item"><a href="#">Unternehmen</a>
                             <ul class="nav__sub-menu">
-                                <li class="nav__sub-menu__item"><a href="#">Uber uns</a></li>
-                                <li class="nav__sub-menu__item"><a href="#">Team</a></li>
-                                <li class="nav__sub-menu__item"><a href="#">Partner</a></li>
-                                <li class="nav__sub-menu__item"><a href="#">Kunden</a></li>
-                                <li class="nav__sub-menu__item"><a href="#">Jobs</a></li>
-                                <li class="nav__sub-menu__item"><a href="#">Events</a></li>
+
+                                {{ range where .Site.RegularPages "Section" "unternehmen" }}
+
+                                    <li class="nav__sub-menu__item"><a href="{{ .URL }}">{{ .Title }}</a></li>
+
+                                {{ end }}
                             </ul>
                         </li>
                         <li class="second-nav__item"><a href="#">Suche</a></li>

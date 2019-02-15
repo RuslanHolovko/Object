@@ -5,7 +5,11 @@ draft: true
 contTitle: "React"
 employeName: "John Don"
 employePosition: "React Developer"
-cardTitle: "Some title"
+cardTitle: "React"
+
+blocktitle: "React title"
+description: "What is React?"
+empphoto: "employee.jpeg"
 
 ---
 

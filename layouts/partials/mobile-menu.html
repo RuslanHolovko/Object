@@ -1,0 +1,34 @@
+	<!-- .mobile-menu begin -->
+	<div class="mobile">
+
+		<div class="mobile__top">
+
+			<div>
+				<img src={{"img/logo_positiv_mobile_retina.png" | relURL}} alt="object">
+			</div>
+
+			<button class="mobile__button">
+				<span></span>
+				<span></span>
+			</button>
+
+		</div>
+
+		<ul class="mobile__list">
+			<li><a href="/angebot">Angebot</a></li>
+			<li><a href="javascript:void(0)">Lösungen</a></li>
+			<li><a href="/blog">Blog</a></li>
+			<li><a href="javascript:void(0)">Kontakt</a></li>
+		</ul>
+
+
+
+		<ul class="mobile__sublist">
+
+			{{ range where .Site.RegularPages "Section"  "unternehmen" }}
+				<li><a href="{{ .URL }}">{{ .Title }}</a></li>
+			{{ end }}
+		</ul>
+
+	</div>
+	<!-- .mobile-menu end -->

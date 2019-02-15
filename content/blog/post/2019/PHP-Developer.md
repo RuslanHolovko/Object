@@ -6,5 +6,9 @@ contTitle: "PHP"
 employeName: "John Irish"
 employePosition: "PHP Developer"
 cardTitle: "PHP is the best programing language"
+
+blocktitle: "PHP title"
+description: "PHP description text"
+empphoto: "employee.jpeg"
 ---
 

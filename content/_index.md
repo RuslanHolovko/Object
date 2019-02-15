@@ -23,8 +23,6 @@ slide9img: "img/obj_banking.jpg"
 slide10img: "img/obj_automotive.jpg"
 
 
-
-
 slideLogoImg: "img/OBJ_Landing_Logo.png"
 
 
@@ -44,3 +42,8 @@ homeRev3Message: " “Durch die Einführung eines Intranets, in Kombination mit 
 
 
 ---
+
+
+[[resources]]
+  name = "emploee"
+  src = "img/employee.jpeg"

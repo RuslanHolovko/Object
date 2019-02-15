@@ -1,0 +1,19 @@
+<div class="employee">
+
+    <h2 class="employee-title">IHR ANSPRECHSPARTNER</h2>
+
+    <div class="emp-hidden" style="display: none!important;">{{.Params.empphoto}}</div>
+
+    <img class="employee__img" src={{"img/page-content/" | relURL}} alt="Employee pic">
+
+    <div class="employee-name">{{ .Params.employeName }}</div>
+
+    <div class="employee-position">{{ .Params.employePosition }}</div>
+
+    <div class="employee-links">
+        <a href="#" data-modal="true" data-modal-type="recall" class="call"><i class="icon icon-call"></i>Ich wünsche einen Rückruf</a>
+        <a href="#" data-modal="true" data-modal-type="email" class="mail"><i class="icon icon-mail"></i>Schreiben Sie mir eine Mail</a>
+        <a href="#recommended" class="articles scroll-page"><i class="icon icon-down"></i>Empfohlene Artikel ansehen</a>
+    </div>
+
+</div>

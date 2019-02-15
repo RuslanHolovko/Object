@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="{{"css/cards.css" | relURL}}">
     <link rel="stylesheet" href="{{"css/article-page.css" | relURL}}">
 </head>
-<body>
+<body class="{{ .Params.specialclass }}">
+
     <div id="article-page" class="container-main">
 
         {{ block "header" . }}
@@ -22,20 +23,22 @@
         {{ end }}
 
 
-        {{ block "main" . }}
+        <div>
+            {{ block "main" . }}
+            
+                {{ .Content }}
+            
+            {{ end }}
+            
+            
+            {{ block "footer" . }}
+            
+                {{ partial "second-footer" . }}
+            
+            {{ end }}
+        </div>
 
-            {{ .Content }}
-
-        {{ end }}
-
-
-
-        {{ block "footer" . }}
-
-            {{ partial "second-footer" . }}
-
-        {{ end }}
-
+    </div>
 
 
     <script src="{{"js/jquery-3.3.1.min.js" | relURL}}"></script>

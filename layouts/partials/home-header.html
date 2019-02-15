@@ -35,29 +35,16 @@
 			<li class="nav__link">
 				<a href="/angebot">Angebot</a>
 				<ul class="nav__sublist">
-<!-- 					<li><a href="javascript:void(0)">Digitalisierung</a></li>
-					<li><a href="javascript:void(0)">Hybrid-Nearshoring</a></li>
-					<li><a href="javascript:void(0)">Wartung & Support</a></li>
-					<li><a href="javascript:void(0)">Identity Managment</a></li> -->
-
-
-					{{ range where .Site.Pages "Section" "angebot"}}
+					{{ range where .Site.RegularPages "Section" "angebot"}}
 						<li><a href="{{ .URL }}">{{ .Title }}</a></li>
 					{{ end }}
-
 				</ul>
 			</li>
 			<li>
 				<a href="javascript:void(0)">Lösungen</a></li>
 			<li class="nav__link"><a href="/technologien">Technologien</a>
 				<ul class="nav__sublist">
-<!-- 					<li><a href="javascript:void(0)">Alfresco</a></li>
-					<li><a href="javascript:void(0)">Ephesoft</a></li>
-					<li><a href="javascript:void(0)">Dogusign</a></li>
-					<li><a href="javascript:void(0)">Liferay</a></li>
-					<li><a href="javascript:void(0)">Java</a></li>
-					<li><a href="javascript:void(0)">C#</a></li> -->
-					{{ range where .Site.Pages "Section" "technologien"}}
+					{{ range where .Site.RegularPages "Section" "technologien"}}
 						<li><a href="{{ .URL }}">{{ .Title }}</a></li>
 					{{ end }}
 				</ul>
@@ -71,14 +58,15 @@
 		<ul class="nav__right">
 			<li><a href="javascript:void(0)">mediathek</a></li>
 			<li class="nav__link">
-				<a href="javascript:void(0)">Unternehmen</a>
+				<a href="/unternehmen">Unternehmen</a>
 				<ul class="nav__sublist">
-					<li><a href="javascript:void(0)">Über Uns</a></li>
-					<li><a href="javascript:void(0)">Team</a></li>
-					<li><a href="javascript:void(0)">Kunden & Partner</a></li>
-					<li><a href="javascript:void(0)">Veranstaltungen</a></li>
-					<li><a href="javascript:void(0)">Offene Stellen</a></li>
-					<li><a href="javascript:void(0)">Kontakt</a></li>
+
+					{{ range where .Site.RegularPages "Section" "unternehmen" }}
+					
+		        <li class="nav__sub-menu__item"><a href="{{ .URL }}">{{ .Title }}</a></li>
+
+					{{ end }}
+
 				</ul>
 			</li>
 			<li><a href="javascript:void(0)">Suche</a></li>
